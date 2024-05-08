@@ -5,6 +5,206 @@
     <title>Каталог</title>
   </head>
   <body>
+    <header>
+      <div>
+        <a class="navigation-logo" href="index.html"><img class="page-header-logo" src="" alt="Логотип Седоны"></a>
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="">О Седоне</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-current" href="">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="user-menu">
+        <li class="user-menu-item"><a class="search-button" href="#">Поиск</a></li>
+        <li class="user-menu-item"><a class="favourite-button" href="#">Избранное</a></li>
+        <li class="user-menu-item"><a class="button want-button" href="#">Хочу сюда!</a></li>
+      </ul>
+    </header>
+    <main class="main-inner">
+      <header class="inner-header">
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ol class="breadcrumbs"> <!--У Андрея здесь ненумерованный список. Почему?-->
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ol>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                  Бассейн
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="parking" checked>
+                  Парковка
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="wi-fi">
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="housing-group" value="inn" checked>
+                  Гостиница
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="housing-group" value="hotel">
+                  Отель
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="housing-group" value="apartments">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <!--тут пока не знаю, как оформить-->
+          </fieldset>
+          <button class="button" type="submit">Применить</button>
+          <button class="button" type="submit">Сбросить</button>
+        </form>
+
+      </header>
+      <section>
+        <h2 class="inner-page-title">Найдено гостиниц:</h2> <!--нужно будет подставить число-->
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвые</option>
+          <option value="popular">Сначала популярные</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+        <ul class="button-list">
+          <li class="button-item">
+            <a class="button button-light" href="#">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a class="button button-light" href="#">
+              <span class="visually-hidden">Показать слайды</span>
+            </a>
+            <a class="button button-light" href="#">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="hotel-list">
+          <li class="hotel-card">
+            <a class="hotel-card-link" href="hotel.html">
+              <img class="hotel-car-image" src="" alt=""></a>
+            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+            <span class="">Гостиница</span> <!--тут как-то хочется, чтобы была переменная и значение из списка чтобы было выбрано -->
+            <b hotel-card-price-range>От 4000 ₽</b>
+            <a class="button button-brown" href="hotel.html">Подробнее</a>
+            <button class="button button-blue" type="button">В избранное</button>
+            <!--ТУТ РЕЙТИНГ БУДЕТ-->
+            <span class="rating">Рейтинг:</span><!--и нужно какое-то высчитанное значение-->
+          </li>
+          <li class="hotel-card">
+            <a class="hotel-card-link" href="hotel.html">
+              <img class="hotel-car-image" src="" alt=""></a>
+            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+            <span class="">Гостиница</span> <!--тут как-то хочется, чтобы была переменная и значение из списка чтобы было выбрано -->
+            <b hotel-card-price-range>От 4000 ₽</b>
+            <a class="button button-brown" href="hotel.html">Подробнее</a>
+            <button class="button button-blue" type="button">В избранное</button>
+            <!--ТУТ РЕЙТИНГ БУДЕТ-->
+            <span class="rating">Рейтинг:</span><!--и нужно какое-то высчитанное значение-->
+          </li>
+          <li class="hotel-card">
+            <a class="hotel-card-link" href="hotel.html">
+              <img class="hotel-car-image" src="" alt=""></a>
+            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+            <span class="">Гостиница</span> <!--тут как-то хочется, чтобы была переменная и значение из списка чтобы было выбрано -->
+            <b hotel-card-price-range>От 4000 ₽</b>
+            <a class="button button-brown" href="hotel.html">Подробнее</a>
+            <button class="button button-blue" type="button">В избранное</button>
+            <!--ТУТ РЕЙТИНГ БУДЕТ-->
+            <span class="rating">Рейтинг:</span><!--и нужно какое-то высчитанное значение-->
+          </li>
+          <li class="hotel-card">
+            <a class="hotel-card-link" href="hotel.html">
+              <img class="hotel-car-image" src="" alt=""></a>
+            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+            <span class="">Гостиница</span> <!--тут как-то хочется, чтобы была переменная и значение из списка чтобы было выбрано -->
+            <b hotel-card-price-range>От 4000 ₽</b>
+            <a class="button button-brown" href="hotel.html">Подробнее</a>
+            <button class="button button-blue" type="button">В избранное</button>
+            <!--ТУТ РЕЙТИНГ БУДЕТ-->
+            <span class="rating">Рейтинг:</span><!--и нужно какое-то высчитанное значение-->
+          </li>
+        </ul>
+        <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-list pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-list">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-list">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-list">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-list">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-list">10</a>
+          </li>
+        </ul>
+        <select class="select-control" aria-label="Гостиниц на странице:">
+          <option value="four">4</option>
+          <option value="eight">8</option>
+          <option value="sixteen">16</option>
+        </select>
+      </section>
+
+
+
+    </main>
+
+    <footer class="page-footer">
+      <h2 class="main-page-title white-text">Подпишитесь на рассылку</h2>
+        <p class="description">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="newsletter-email">Email</label>
+          <input class="field" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email">
+          <button class="button newsletter-button" type="submit">Подписаться</button></form>
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="footer-social-list">
+        <li class="footer-social-item"><a class="button" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Твиттер</span></a></li>
+        <li class="footer-social-item"><a class="button" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li class="footer-social-item"><a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS"><span class="visually-hidden">Ютуб</span></a></li>
+      </ul>
+      <a class="phone-number" href="tel:88128121212">+7 (812) 812-12-12</a>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="htmlacademy-logo" src="" alt="логотип htmlacademy"></a>
+    </footer>
 
   </body>
 </html>
