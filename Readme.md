@@ -2,7 +2,7 @@
 
 * Студент: [Мария Грибова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2518425).
 * Наставник: [Артем Именин](https://htmlacademy.ru/profile/aimenin).
-
+* Сайт: [Мой сайт](https://gribovamag.github.io/2518425-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
