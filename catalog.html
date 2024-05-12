@@ -25,14 +25,14 @@
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ol class="breadcrumbs"> <!--У Андрея здесь ненумерованный список. Почему?-->
+        <ul class="breadcrumbs"> <!--У Андрея здесь ненумерованный список. Почему?-->
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
-        </ol>
+        </ul>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -83,7 +83,7 @@
           </fieldset>
           <fieldset>
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <!--тут пока не знаю, как оформить-->
+            <input class="price-range" type="range" name="price-range">
           </fieldset>
           <button class="button" type="submit">Применить</button>
           <button class="button" type="submit">Сбросить</button>
@@ -120,7 +120,7 @@
             <b hotel-card-price-range>От 4000 ₽</b>
             <a class="button button-brown" href="hotel.html">Подробнее</a>
             <button class="button button-blue" type="button">В избранное</button>
-            <!--ТУТ РЕЙТИНГ БУДЕТ-->
+
             <span class="rating">Рейтинг:</span><!--и нужно какое-то высчитанное значение-->
           </li>
           <li class="hotel-card">
@@ -131,7 +131,7 @@
             <b hotel-card-price-range>От 4000 ₽</b>
             <a class="button button-brown" href="hotel.html">Подробнее</a>
             <button class="button button-blue" type="button">В избранное</button>
-            <!--ТУТ РЕЙТИНГ БУДЕТ-->
+
             <span class="rating">Рейтинг:</span><!--и нужно какое-то высчитанное значение-->
           </li>
           <li class="hotel-card">
@@ -142,7 +142,7 @@
             <b hotel-card-price-range>От 4000 ₽</b>
             <a class="button button-brown" href="hotel.html">Подробнее</a>
             <button class="button button-blue" type="button">В избранное</button>
-            <!--ТУТ РЕЙТИНГ БУДЕТ-->
+
             <span class="rating">Рейтинг:</span><!--и нужно какое-то высчитанное значение-->
           </li>
           <li class="hotel-card">
@@ -153,11 +153,10 @@
             <b hotel-card-price-range>От 4000 ₽</b>
             <a class="button button-brown" href="hotel.html">Подробнее</a>
             <button class="button button-blue" type="button">В избранное</button>
-            <!--ТУТ РЕЙТИНГ БУДЕТ-->
+
             <span class="rating">Рейтинг:</span><!--и нужно какое-то высчитанное значение-->
           </li>
         </ul>
-        <button class="button pagination-show-more" type="button">Загрузить ещё</button>
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-list pagination-current">1</a>
@@ -178,24 +177,22 @@
             <a class="pagination-list">10</a>
           </li>
         </ul>
-        <select class="select-control" aria-label="Гостиниц на странице:">
-          <option value="four">4</option>
-          <option value="eight">8</option>
-          <option value="sixteen">16</option>
-        </select>
       </section>
 
 
 
     </main>
 
-    <footer class="page-footer">
+    <section class="newsletter-section">
       <h2 class="main-page-title white-text">Подпишитесь на рассылку</h2>
         <p class="description">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email">Email</label>
           <input class="field" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email">
           <button class="button newsletter-button" type="submit">Подписаться</button></form>
+    </section>
+    <footer class="page-footer">
+
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item"><a class="button" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Твиттер</span></a></li>
