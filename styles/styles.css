@@ -33,12 +33,16 @@ header {
   font-weight: 700;
 }
 
+a {
+  text-decoration: none;
+}
+
 .nav-link {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
   color: #000000;
-  text-decoration: none;
+
 }
 
 .user-menu-item {
@@ -46,5 +50,4 @@ header {
   line-weight: 20px;
   text-transform: uppercase;
   text-align: center;
-
 }
