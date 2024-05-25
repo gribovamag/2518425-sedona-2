@@ -21,6 +21,30 @@
 body {
   font-family: "PT Sans";
 
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+header {
+  font-weight: 700;
+}
+
+.nav-link {
+  font-size: 20px;
+  line-height: 24px;
+
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.user-menu-item {
+  font-size: 16px;
+  line-weight: 20px;
+  text-transform: uppercase;
+
 }
