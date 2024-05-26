@@ -87,7 +87,7 @@ a {
 
   background-color: var(--bg-middle-color); /* не нашла, как по-другому добавиль альфа-канал в бэкграунд. так можно? */
   background-image: url("../images/index-background.jpg");
-  background-size: 100% auto;
+  /* background-size: 100%; */
   background-repeat: no-repeat;
 }
 
