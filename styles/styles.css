@@ -1,3 +1,23 @@
+:root {
+  --text-base-color: #000000;
+  --text-additional-color: #333333;
+  --text-accent-color: #ffffff;
+  --text-accent-color-pressed: rgba(255, 255, 255, 0.3);
+  --text-error-color: #FF5757;
+
+  --theme-color: #82B3D3;
+  --accent-color: #7DB54F;
+
+  --button-base-color: #756157;
+  --button-additional-color: var(--theme-color);
+  --button-color-chosen: var(--accent-color);
+
+  --bg-base-color: #ffffff;
+  --bg-theme-color: var(--theme-color);
+  --bg-light-color: rgba(130, 179, 211, 0.12); /*как задать этот цвет через --theme-color и добавление к нему прозрачности просто?*/
+  --bg-middle-color: rgba(130, 179, 211, 0.2); /*как задать этот цвет через --theme-color и добавление к нему прозрачности просто?*/
+}
+
 @font-face {
   font-family: "PT Sans", "Arial", sans-serif;
 
@@ -25,8 +45,8 @@ body {
   font-size: 18px;
   line-height: 21px;
 
-  color: #000000;
-  background-color: #ffffff;
+  color: var(--text-base-color);
+  background-color: var(--bg-base-color);
 }
 
 ul {
@@ -49,23 +69,23 @@ a {
   font-size: 20px;
   line-height: 24px;
   /* text-align: center; */
-  color: #000000;
+  color: var(--text-base-color);
 
 }
 
 .user-menu a {
   font-size: 16px;
-  line-weight: 20px;
+  line-height: 20px;
   text-transform: uppercase;
   /* text-align: center; */
 
-  color: #ffffff;
-  background-color: #756157;
+  color: var(--text-accent-color);
+  background-color: var(--button-base-color)
 }
 
-.hero-image {
+.hero-image-wrapper {
 
-  background-color: rgba(131, 179, 211, 0.2); /* не нашла, как по-другому добавиль альфа-канал в бэкграунд. так можно? */
+  background-color: var(--bg-middle-color); /* не нашла, как по-другому добавиль альфа-канал в бэкграунд. так можно? */
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -81,4 +101,9 @@ a {
 .description {
   font-size: 22px;
   line-height: 26px;
+}
+
+.white-text {
+  color: var(--text-accent-color);
+  background-color: var(--bg-theme-color);
 }
