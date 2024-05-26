@@ -51,6 +51,9 @@ body {
   background-color: var(--bg-base-color);
 }
 
+.visually-hidden {
+  display: none;
+}
 
 
 ul {
@@ -88,11 +91,12 @@ a {
 }
 
 .hero-image-wrapper {
-
+  width: 100%;
+  height: 485px;
   background-color: var(--bg-middle-color); /* не нашла, как по-другому добавиль альфа-канал в бэкграунд. так можно? */
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-position: bottom;
-  /* background-size: 100%; */
+  background-size: 100% auto;
   background-repeat: no-repeat no-repeat;
 }
 
@@ -110,7 +114,8 @@ a {
 }
 
 .advantage-icon {
-  color: var(--theme-color);
+  filter: invert(79%) sepia(9%) saturate(1652%) hue-rotate(171deg) brightness(86%) contrast(90%); /* не нашла, как по-другому перекрашивать иконку в стилях */
+
 }
 
 h3 {
@@ -127,4 +132,50 @@ h3 {
 .white-text {
   color: var(--text-accent-color);
   background-color: var(--bg-theme-color);
+}
+
+.rectangle {
+  width: 60px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.white-text > .rectangle {
+  /* width: 60px;
+  height: 2px; */
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.button {
+  display: block;
+  color: var(--text-accent-color);
+  background-color: var(--button-base-color);
+  text-transform: uppercase;
+}
+
+.newsletter-section {
+  width: 100%;
+  height: 485px;
+  background-color: var(--bg-middle-color); /* не нашла, как по-другому добавиль альфа-канал в бэкграунд. так можно? */
+  background-image: url("../images/subscribe-background.png");
+  background-position: bottom;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.newsletter-form input {
+  /* не понимаю, почему паддинги так сильно увеличивают кнопку */
+  /* padding: 14px 20px;  */
+  width: 452px;
+  height: 52px;
+  border-radius: 4px 0 0 4px;
+
+}
+
+.newsletter-form button {
+  width: 232px;
+  height: 52px;
+  border-radius: 0 4px 4px 0;
+  border: none;
+
 }
