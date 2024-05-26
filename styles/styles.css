@@ -39,6 +39,7 @@
 }
 
 body {
+  width: 1200px;
   font-family: "PT Sans";
 
   font-weight: 400;
