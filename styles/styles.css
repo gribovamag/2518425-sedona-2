@@ -29,6 +29,10 @@ body {
   background-color: #ffffff;
 }
 
+.body-index {
+  text-align: center;
+}
+
 header {
   font-weight: 700;
 }
@@ -40,7 +44,7 @@ a {
 .nav-link {
   font-size: 20px;
   line-height: 24px;
-  text-align: center;
+  /* text-align: center; */
   color: #000000;
 
 }
@@ -49,7 +53,7 @@ a {
   font-size: 16px;
   line-weight: 20px;
   text-transform: uppercase;
-  text-align: center;
+  /* text-align: center; */
 
   color: #ffffff;
   background-color: #756157;
@@ -57,6 +61,15 @@ a {
 
 .hero-image {
 
-  background-color: rgba(131, 179, 211, 0.2);
-  /* background-image: url("../images/index-background.jpg"); */
+  background-color: rgba(131, 179, 211, 0.2); % не нашла, как по-другому добавиль альфа-канал в бэкграунд. так можно?
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.main-page-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
