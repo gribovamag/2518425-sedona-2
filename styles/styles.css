@@ -88,9 +88,10 @@ a {
 .hero-image-wrapper {
 
   background-color: var(--bg-middle-color); /* не нашла, как по-другому добавиль альфа-канал в бэкграунд. так можно? */
-  background-image: url("../images/index-background.jpg");
+  background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
+  background-position: bottom;
   /* background-size: 100%; */
-  background-repeat: no-repeat;
+  background-repeat: no-repeat no-repeat;
 }
 
 .main-page-title {
