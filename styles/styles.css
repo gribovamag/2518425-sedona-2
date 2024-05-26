@@ -49,6 +49,8 @@ body {
   background-color: var(--bg-base-color);
 }
 
+
+
 ul {
   list-style-type: none;
 }
@@ -101,6 +103,7 @@ a {
 .description {
   font-size: 22px;
   line-height: 26px;
+  color: var(--text-additional-color);
 }
 
 .white-text {
