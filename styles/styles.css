@@ -30,7 +30,7 @@ body {
 }
 
 .body-index {
-  text-align: center;
+  text-align: center; /*можно ли задать text-align на уровне body, или лучше пониже уровнем?*/
 }
 
 header {
@@ -61,7 +61,7 @@ a {
 
 .hero-image {
 
-  background-color: rgba(131, 179, 211, 0.2); % не нашла, как по-другому добавиль альфа-канал в бэкграунд. так можно?
+  background-color: rgba(131, 179, 211, 0.2); /* не нашла, как по-другому добавиль альфа-канал в бэкграунд. так можно? */
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
