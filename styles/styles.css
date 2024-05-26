@@ -73,3 +73,8 @@ a {
   line-height: 36px;
   text-transform: uppercase;
 }
+
+.description {
+  font-size: 22px;
+  line-height: 26px;
+}
