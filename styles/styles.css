@@ -29,6 +29,10 @@ body {
   background-color: #ffffff;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .body-index {
   text-align: center; /*можно ли задать text-align на уровне body, или лучше пониже уровнем?*/
 }
