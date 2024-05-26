@@ -179,3 +179,31 @@ h3 {
   border: none;
 
 }
+
+.footer-social-item {
+  display: block;
+  width: 47.33px;
+  height: 40px;
+  background-position: center;
+}
+
+.vk {
+  background-image: url("../images/vk.svg");
+  background-repeat: no-repeat;
+}
+
+.telegram {
+  background-image: url("../images/telegram.svg");
+  background-repeat: no-repeat;
+}
+
+.youtube {
+  background-image: url("../images/youtube.svg");
+  background-repeat: no-repeat;
+}
+
+.phone-number {
+  color: var(--text-base-color);
+  font-size: 40px;
+  line-height: 40px;
+}
