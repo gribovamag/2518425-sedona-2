@@ -106,6 +106,21 @@ a {
   color: var(--text-additional-color);
 }
 
+.advantage-icon {
+  color: var(--theme-color);
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantage-description {
+  color: var(--text-additional-color);
+}
+
 .white-text {
   color: var(--text-accent-color);
   background-color: var(--bg-theme-color);
