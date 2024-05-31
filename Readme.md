@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Мария Грибова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2518425).
-* Наставник: [Артем Именин](https://htmlacademy.ru/profile/aimenin).
+* Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
 * Сайт: [Мой сайт](https://gribovamag.github.io/2518425-sedona-2/).
 ---
 

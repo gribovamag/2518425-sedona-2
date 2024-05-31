@@ -18,24 +18,22 @@
         </nav>
       </div>
       <ul class="user-menu">
-        <li class="user-menu-item"><a class="search-button" href="#">Поиск</a></li>
-        <li class="user-menu-item"><a class="favourite-button" href="#">Избранное</a></li>
-        <li class="user-menu-item"><a class="button want-button" href="#">Хочу сюда!</a></li>
+        <li class="user-menu-item"><button class="button search-button" type="button">Поиск</button></li>
+        <li class="user-menu-item"><a class="button favourite-button" href="#">Избранное</a></li>
+        <li class="user-menu-item"><button class="button" type="button">Хочу сюда!</button></li>
       </ul>
     </header>
     <main class="main-inner">
       <header class="header-inner white-text">
         <h1 class="header-inner-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs"> <!--У Андрея здесь ненумерованный список. Почему?-->
+        <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs-item more">
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
-        </ul>
+        </ol>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend>Инфраструктура:</legend> <!--class="catalog-filter-title" -->
@@ -88,13 +86,16 @@
             <legend>Стоимость, ₽:</legend>
             <input class="price-range" type="range" name="price-range">
           </fieldset>
-          <button class="button" type="submit">Применить</button>
-          <button class="button" type="submit">Сбросить</button>
+          <div>
+            <button class="button" type="submit">Применить</button>
+          <button class="button" type="reset">Сбросить</button>
+          </div>
+
         </form>
 
       </header>
       <section>
-        <h2 class="h2-title">Найдено гостиниц:</h2> <!--нужно будет подставить число-->
+        <h2 class="section-title search-result-title">Найдено гостиниц: <span>38</span></h2> <!--нужно будет подставить число-->
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="popular">Сначала популярные</option>
@@ -114,95 +115,106 @@
           </li>
         </ul>
 
-        <ul class="hotel-list">
-          <li class="hotel-card">
-            <a class="hotel-card-link" href="hotel.html">
-              <img class="hotel-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212"  alt=""></a>
-            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-            <span class="">Гостиница</span> <!--тут как-то хочется, чтобы была переменная и значение из списка чтобы было выбрано -->
-            <b hotel-card-price-range>От 4000 ₽</b>
-            <a class="button button-brown" href="hotel.html">Подробнее</a>
+        <div class="hotel-list"> <!--можно ли -list оставлять в названии дива, а не списка, или это моветон?-->
+          <article class="hotel-card">
+            <a class="hotel-card-link" href="hotels/amara-resort-spa.html">
+              <img class="hotel-card-image" src="images/hotels/hotel-amara-resort-spa.jpg" width="300" height="212"  alt="">
+            </a>
+            <a class="hotel-card-link" href="hotels/amara-resort-spa.html">
+              <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+            </a>
+            <span class="hotel-type">Гостиница</span>
+            <b class="hotel-card-price-range">От 4000 ₽</b>
+            <a class="button button-brown" href="hotels/amara-resort-spa.html">Подробнее</a>
             <button class="button button-blue" type="button">В избранное</button>
+            <span class="star-rating">4 звезды</span>
+            <span class="rating">Рейтинг: 8,5</span>
+          </article>
 
-            <span class="rating">Рейтинг:</span><!--и нужно какое-то высчитанное значение-->
-          </li>
-          <li class="hotel-card">
-            <a class="hotel-card-link" href="hotel.html">
-              <img class="hotel-card-image" src="images/hotels/hotel-2.jpg" width="300" height="212"  alt=""></a>
-            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-            <span class="">Гостиница</span> <!--тут как-то хочется, чтобы была переменная и значение из списка чтобы было выбрано -->
-            <b hotel-card-price-range>От 4000 ₽</b>
-            <a class="button button-brown" href="hotel.html">Подробнее</a>
+          <article class="hotel-card">
+            <a class="hotel-card-link" href="hotels/villas-at-poco-diablo.html">
+              <img class="hotel-card-image" src="images/hotels/villas-at-poco-diablo.jpg" width="300" height="212"  alt="">
+            </a>
+            <a class="hotel-card-link" href="hotels/villas-at-poco-diablo.html">
+              <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <span class="hotel-type">Гостиница</span>
+            <b class="hotel-card-price-range">От 5000 ₽</b>
+            <a class="button button-brown" href="hotels/villas-at-poco-diablo.html">Подробнее</a>
+            <button class="button button-blue chosen" type="button">В избранном</button>
+            <span class="star-rating">4 звезды</span>
+            <span class="rating">Рейтинг: 9,2</span>
+          </article>
+
+          <article class="hotel-card">
+            <a class="hotel-card-link" href="hotels/desert-quail-inn.html">
+              <img class="hotel-card-image" src="images/hotels/desert-quail-inn.jpg" width="300" height="212"  alt="">
+            </a>
+            <a class="hotel-card-link" href="hotels/desert-quail-inn.html">
+              <h3 class="hotel-card-title">Desert Quail Inn</h3>
+            </a>
+            <span class="hotel-type">Гостиница</span>
+            <b class="hotel-card-price-range">От 2500 ₽</b>
+            <a class="button button-brown" href="hotels/desert-quail-inn.html">Подробнее</a>
             <button class="button button-blue" type="button">В избранное</button>
+            <span class="star-rating">3 звезды</span>
+            <span class="rating">Рейтинг: 6,9</span>
+          </article>
 
-            <span class="rating">Рейтинг:</span><!--и нужно какое-то высчитанное значение-->
-          </li>
-          <li class="hotel-card">
-            <a class="hotel-card-link" href="hotel.html">
-              <img class="hotel-card-image" src="images/hotels/hotel-3.jpg" width="300" height="212"  alt=""></a>
-            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-            <span class="">Гостиница</span> <!--тут как-то хочется, чтобы была переменная и значение из списка чтобы было выбрано -->
-            <b hotel-card-price-range>От 4000 ₽</b>
-            <a class="button button-brown" href="hotel.html">Подробнее</a>
+          <article class="hotel-card">
+            <a class="hotel-card-link" href="hotels/greentree-inn.html">
+              <img class="hotel-card-image" src="images/hotels/hotel-greentree-inn.jpg" width="300" height="212"  alt="">
+            </a>
+            <a class="hotel-card-link" href="hotels/greentree-inn.html">
+              <h3 class="hotel-card-title">GreenTree Inn</h3>
+            </a>
+            <span class="hotel-type">Гостиница</span>
+            <b class="hotel-card-price-range">От 1500 ₽</b>
+            <a class="button button-brown" href="hotels/greentree-inn.html">Подробнее</a>
             <button class="button button-blue" type="button">В избранное</button>
-
-            <span class="rating">Рейтинг:</span><!--и нужно какое-то высчитанное значение-->
-          </li>
-          <li class="hotel-card">
-            <a class="hotel-card-link" href="hotel.html">
-              <img class="hotel-card-image" src="images/hotels/hotel-4.jpg" width="300" height="212" alt=""></a>
-            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-            <span class="">Гостиница</span> <!--тут как-то хочется, чтобы была переменная и значение из списка чтобы было выбрано -->
-            <b hotel-card-price-range>От 4000 ₽</b>
-            <a class="button button-brown" href="hotel.html">Подробнее</a>
-            <button class="button button-blue" type="button">В избранное</button>
-
-            <span class="rating">Рейтинг:</span><!--и нужно какое-то высчитанное значение-->
-          </li>
-        </ul>
-        <ul class="pagination">
+            <span class="star-rating">2 звезды</span>
+            <span class="rating">Рейтинг: 5,0</span>
+          </article>
+        </div>
+        <ol class="pagination">
           <li class="pagination-item">
-            <a class="pagination-list pagination-current">1</a>
+            <a class="pagination-list pagination-current" href="">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-list">2</a>
+            <a class="pagination-list" href="">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-list">3</a>
+            <a class="pagination-list" href="">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-list">4</a>
+            <a class="pagination-list" href="">4</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-list">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-list">10</a>
+            <a class="pagination-list" href="">10</a>
           </li>
-        </ul>
+        </ol>
       </section>
-
-
-
+      <section class="newsletter-section">
+        <h2 class="section-title white-text">Подпишитесь на рассылку</h2>
+          <p class="description">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="newsletter-email">Email</label>
+            <input class="field" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email" required>
+            <button class="button newsletter-button" type="submit">Подписаться</button></form>
+      </section>
     </main>
 
-    <section class="newsletter-section">
-      <h2 class="h2-title white-text">Подпишитесь на рассылку</h2>
-        <p class="description">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Email</label>
-          <input class="field" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email">
-          <button class="button newsletter-button" type="submit">Подписаться</button></form>
-    </section>
-    <footer class="page-footer">
 
-      <h2 class="visually-hidden">Социальные сети</h2>
+    <footer class="page-footer">
       <ul class="footer-social-list">
         <li class="footer-social-item vk"><a class="button" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></a></li>
-        <li class="footer-social-item telegram"><a class="button" href="https://t.me/htmlacademy"><span class="visually-hidden">Телеграм</span></a></li>
-        <li class="footer-social-item youtube"><a class="button" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Ютуб</span></a></li>
+        <li class="footer-social-item telegram"><a class="button" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a></li>
+        <li class="footer-social-item youtube"><a class="button" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Youtube</span></a></li>
       </ul>
-      <a class="phone-number" href="tel:88128121212">+7 (812) 812-12-12</a>
+      <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="htmlacademy-logo" width="114.9" height="32.9" src="images/htmlacademy.svg" alt="логотип htmlacademy"></a>
     </footer>
 
